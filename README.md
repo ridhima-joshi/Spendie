@@ -1,73 +1,106 @@
-# Welcome to your Lovable project
-
-## Project info
-
-**URL**: https://lovable.dev/projects/6fbbfb18-35e0-4a70-8350-8930e7b3df25
-
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/6fbbfb18-35e0-4a70-8350-8930e7b3df25) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/6fbbfb18-35e0-4a70-8350-8930e7b3df25) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h1>Spendie: Smart Expense Tracking</h1>
+  <p>An elegant and user-friendly full-stack web application designed to help you take control of your personal finances. Spendie allows you to track daily expenses, set monthly budgets, and visualize your spending habits with a dynamic dashboard.</p>
+  <h2>✨ Features</h2>
+  <ul>
+    <li><strong>User Authentication</strong>: Secure registration and login using JSON Web Tokens (JWT).</li>
+    <li><strong>Onboarding</strong>: A personalized setup for new users to define their payment methods and expense categories.</li>
+    <li><strong>Dynamic Dashboard</strong>: A central hub that visualizes your total spending, budget vs. actuals, and transaction history.</li>
+    <li><strong>Budget Management</strong>: Set and track monthly budgets for each of your custom expense categories.</li>
+    <li><strong>Daily Expense Logging</strong>: An easy-to-use form to log your daily spending.</li>
+  </ul>
+  <h2>🚀 Tech Stack</h2>
+  <p>Spendie is a full-stack application built with the MERN stack.</p>
+  <h3>Backend</h3>
+  <ul>
+    <li><strong>Node.js</strong>: The server-side JavaScript runtime.</li>
+    <li><strong>Express.js</strong>: The web application framework for the API.</li>
+    <li><strong>MongoDB</strong>: A NoSQL database for flexible data storage.</li>
+    <li><strong>Mongoose</strong>: An object data modeling (ODM) library for MongoDB.</li>
+    <li><strong>JWT &amp; bcrypt.js</strong>: For secure user authentication and password hashing.</li>
+  </ul>
+  <h3>Frontend</h3>
+  <ul>
+    <li><strong>React.js</strong>: The library for building the user interface.</li>
+    <li><strong>Vite</strong>: The build tool for a fast development experience.</li>
+    <li><strong>TypeScript</strong>: A superset of JavaScript for type safety.</li>
+    <li><strong>Axios</strong>: For making HTTP requests to the backend API.</li>
+    <li><strong>React Router</strong>: For client-side navigation.</li>
+    <li><strong>Shadcn/UI</strong>: The component library for a modern and accessible design.</li>
+  </ul>
+  <h2>⚙️ Getting Started</h2>
+  <p>Follow these steps to get a local copy of the project up and running.</p>
+  <h3>Prerequisites</h3>
+  <ul>
+    <li>Node.js (LTS version)</li>
+    <li>MongoDB Atlas account</li>
+    <li>Git</li>
+  </ul>
+  <h3>Installation</h3>
+  <ol>
+    <li><strong>Clone the repository:</strong>
+      <pre><code>git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name</code></pre>
+    </li>
+    <li><strong>Backend Setup:</strong>
+      <p>Navigate into the backend folder and install the dependencies.</p>
+      <pre><code>cd Spendie_backend
+npm install</code></pre>
+      <p>Create a <code>.env</code> file with your database connection string and a JWT secret:</p>
+      <pre><code>ATLAS_URI=your_mongodb_connection_string
+JWT_SECRET=your_super_secret_key</code></pre>
+    </li>
+    <li><strong>Frontend Setup:</strong>
+      <p>Navigate into the frontend folder and install the dependencies.</p>
+      <pre><code>cd ../Spendie_frontend
+npm install</code></pre>
+    </li>
+  </ol>
+  <h3>Running the Application</h3>
+  <p>Open two separate terminal windows.</p>
+  <ol>
+    <li><strong>Run the Backend Server:</strong>
+      <pre><code>cd Spendie_backend
+node server.js</code></pre>
+    </li>
+    <li><strong>Run the Frontend Development Server:</strong>
+      <pre><code>cd ../Spendie_frontend
+npm run dev</code></pre>
+    </li>
+  </ol>
+  <p>The application will be accessible at <code>http://localhost:8080</code>.</p>
+  <h2>📂 Project Structure</h2>
+  <pre><code>.
+├── Spendie_backend/
+│   ├── models/
+│   ├── routes/
+│   ├── server.js
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── tempCodeRunnerFile.js
+└── Spendie_frontend/
+    ├── src/
+    ├── public/
+    ├── bun.lockb
+    ├── components.json
+	├── eslint.config.js
+    ├── index.html
+    ├── package-lock.json
+	├── package2.json
+    ├── postcss.config.js
+    ├── tailwind.config.ts
+	├── tsconfig.app.json
+    ├── tsconfig.json
+  	├── tsconfig.node.json
+    └── vite.config.ts
+</code></pre>
+  <h2>🙏 Contributing</h2>
+  <p>Feel free to contribute to this project. For major changes, please open an issue first to discuss what you would like to change.</p>
+</body>
+</html>
