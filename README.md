@@ -50,7 +50,7 @@ cd your-repo-name</code></pre>
     </li>
     <li><strong>Backend Setup:</strong>
       <p>Navigate into the backend folder and install the dependencies.</p>
-      <pre><code>cd Spendie_backend
+      <pre><code>cd backend
 npm install</code></pre>
       <p>Create a <code>.env</code> file with your database connection string and a JWT secret:</p>
       <pre><code>ATLAS_URI=your_mongodb_connection_string
@@ -58,7 +58,7 @@ JWT_SECRET=your_super_secret_key</code></pre>
     </li>
     <li><strong>Frontend Setup:</strong>
       <p>Navigate into the frontend folder and install the dependencies.</p>
-      <pre><code>cd ../Spendie_frontend
+      <pre><code>cd ../frontend
 npm install</code></pre>
     </li>
   </ol>
@@ -66,25 +66,25 @@ npm install</code></pre>
   <p>Open two separate terminal windows.</p>
   <ol>
     <li><strong>Run the Backend Server:</strong>
-      <pre><code>cd Spendie_backend
+      <pre><code>cd backend
 node server.js</code></pre>
     </li>
     <li><strong>Run the Frontend Development Server:</strong>
-      <pre><code>cd ../Spendie_frontend
+      <pre><code>cd ../frontend
 npm run dev</code></pre>
     </li>
   </ol>
   <p>The application will be accessible at <code>http://localhost:8080</code>.</p>
   <h2>📂 Project Structure</h2>
   <pre><code>.
-├── Spendie_backend/
+├── backend/
 │   ├── models/
 │   ├── routes/
 │   ├── server.js
 │   ├── package.json
 │   ├── package-lock.json
 │   ├── tempCodeRunnerFile.js
-└── Spendie_frontend/
+└── frontend/
     ├── src/
     ├── public/
     ├── bun.lockb
